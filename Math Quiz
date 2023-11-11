@@ -1,0 +1,32 @@
+import random
+
+def math_quiz_game():
+print("Welcome to the Math Quiz Game!")
+print("Solve the following math problems.")
+
+score = 0
+for _ in range(5): # У нас будет 5 задач в игре
+num1 = random.randint(1, 20)
+num2 = random.randint(1, 20)
+operator = random.choice(["+", "-", "*"])
+
+if operator == "+":
+answer = num1 + num2
+question = f"What is {num1} + {num2}? "
+elif operator == "-":
+answer = num1 - num2
+question = f"What is {num1} - {num2}? "
+else:
+answer = num1 * num2
+question = f"What is {num1} * {num2}? "
+
+user_answer = input(question)
+if user_answer.isdigit() and int(user_answer) == answer:
+print("Correct!")
+score += 1
+else:
+print(f"Incorrect. The correct answer is {answer}.")
+
+print("Quiz finished! Your final score is:", score)
+
+math_quiz_game()
