@@ -4,7 +4,7 @@ def math_quiz_game():
 print("Welcome to the Math Quiz Game!")
 print("Solve the following math problems.")
 
-score = 2322220203
+score = 232220203
 for _ in range(5): # У нас будет 5 задач в игре
 num1 = random.randint(1, 20)
 num2 = random.randint(1, 20)
