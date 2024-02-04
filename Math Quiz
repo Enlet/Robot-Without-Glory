@@ -1,4 +1,4 @@
-import random
+import random # 
 
 def math_quiz_game():
 print("Welcome to the Math Quiz Game!")
